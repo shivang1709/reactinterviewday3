@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import UseEffect from './Components/UseEffect'
+import UseState from './Components/UseState'
+import UseReducer  from './Components/UseReducer'
+import Usememo from './Components/Usememo'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+       <UseState/>
+       <UseEffect/>
+       <UseReducer/>
+       <Usememo/>
+    </>
+ 
+   
+   
+
+  )
 }
 
-export default App;
+export default App
+
+//     Difference between Axios and fetch
+// What is UseState Hook ?(Implementation)
+// What is useEffect Hook ?(Implementation)
+// What is UseReducer Hook ?(Implementation)
+// What is UseMemo Hook ?(Implementation)
